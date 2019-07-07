@@ -1,0 +1,21 @@
+.hero {
+    position: relative;
+    width: 107%;
+    left: -8px;
+}
+
+.message-title::after {
+    content: "";
+    display: block;
+    width: 25%;
+    border-bottom: 4px solid black;
+    margin: auto;
+    margin-top: 3px;
+}
+
+.message-subtext {
+    width: 70%;
+    margin: auto;
+    line-height: 2;
+}
+

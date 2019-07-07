@@ -1,0 +1,32 @@
+.img-container {
+    position: relative;
+}
+
+.featured-item-title {
+    font-weight: 200;
+}
+
+.ratings {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        display: inline-block;
+        .material-icons {
+            width: 24px;
+        }
+    }
+}
+
+.add-cart-msg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    .material-icons {
+        position: absolute;
+        right: 5px;
+        line-height: 0.8em;
+    }
+}
+

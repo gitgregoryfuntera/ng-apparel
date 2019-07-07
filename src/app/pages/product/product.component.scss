@@ -1,0 +1,161 @@
+.product {
+    width: 107%;
+    left: -8px;
+    position: relative;
+    background: #E8EDF0;
+}
+
+.left-arrow {
+    position: absolute;
+    bottom: 25px;
+    right: 65%;
+}
+
+.right-arrow {
+    position: absolute;
+    bottom: 25px;
+    left: 65%;
+}
+
+.item-title {
+    color: #000;
+    font-weight: 300;
+}
+.item-title::after {
+    content: "";
+    display: block;
+    width: 15%;
+    border-bottom: 4px solid black;
+    margin: auto;
+    margin-top: 3px;
+}
+
+// Price Tag Card
+
+.card-header {
+    background: #D2DFE6;
+}
+
+.product-rating {
+    position: relative;
+}
+
+.rating {
+    margin: 0;
+    position: absolute;
+    top: 5px;
+    left: 90px;
+    list-style: none;
+    li {
+        display: inline;
+        i {
+            width: 25px;
+        }
+    }
+}
+
+.product-option {
+    width: 100%;
+    border: 1px solid;
+}
+
+.dropdown {
+    width: 100%;
+    .dropdown-item {
+        width: 100%;
+        a {
+            width: 100%;
+        }
+        span {
+            float: left;
+            color: #000;
+        }
+        .icon-dropdown {
+            float: right;
+            font-size: 22px;
+            color: #000;
+        }
+    }
+}
+
+.product-quantity {
+    position: relative;
+    padding-top: 20px;
+    .btn {
+        border-color: #000;
+        color: #000;
+        margin-top: 1px;
+    }
+}
+
+.quantity-btn {
+    position: absolute;
+    top: 24px;
+    right: 0;
+}
+
+.quantity {
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #F8D9D9;
+    border-radius: 2px;
+    color: #000;
+}
+
+.add-cart {
+    padding-top: 20px !important;
+}
+
+.add-cart-btn {
+    width: 100%;
+    border: 1px solid black;
+    padding: 0px;
+    background: #000;
+    h6 {
+        font-size: 18px;
+        margin: 0px;
+        font-weight: 300;
+        color: #fff;
+    }
+}
+// Description
+.description-title {
+    font-weight: 100;
+}
+
+.description-message {
+    font-weight: 100;
+}
+
+// Reviews
+.review-title {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-size: 22px;
+    color: #000;
+    font-weight: 100;
+    i {
+        float: right;
+        margin-top: 3px;
+    }
+}
+
+// Featured Products
+.featured-products-title {
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.featured-products-title::after {
+    content: "";
+    display: block;
+    width: 35%;
+    border-bottom: 2px solid black;
+    margin: auto;
+    margin-top: 3px;
+}

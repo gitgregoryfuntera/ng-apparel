@@ -1,0 +1,97 @@
+<div class="hero product pt-0 pb-0">
+    <h4 class="text-center pt-2 h2 item-title">Cali Shirt</h4>
+    <img src="../../../assets/shirt-1.jpeg" class="img-responsive"/>
+    <div class="item-picker text-center mt-2">
+      <i class="material-icons left-arrow">arrow_back_ios</i>
+      <img src="../../../assets/shirt-1.jpeg" width="25%"/>
+      <i class="material-icons right-arrow">arrow_forward_ios</i>
+    </div>
+</div>
+<div class="container">
+  <div class="card mt-2">
+    <div class="card-header">
+      <div class="h4 mb-2">$ 34.00</div>
+    </div>
+    <div class="card-body">
+      <div class="product-rating">
+        <h4 class="product-text">Ratings:</h4>
+        <ul class="rating">
+          <li>
+            <i class="material-icons">star_rate</i>
+          </li>
+          <li>
+            <i class="material-icons">star_rate</i>
+          </li>
+          <li>
+            <i class="material-icons">star_rate</i>
+          </li>
+          <li>
+            <i class="material-icons">star_rate</i>
+          </li>
+          <li>
+            <i class="material-icons">star_rate</i>
+          </li>
+        </ul>
+      </div>
+      <div class="product-option">
+        <div class="dropdown">
+          <a class="btn btn-link dropdown-toggle dropdown-item" tabindex="0" (click)="toggleStyle()"> 
+            <span>{{ items[itemIndex] }}</span>
+            <i class="icon icon-caret icon-dropdown"></i>
+          </a>
+          <ul class="menu" [style.display]="display">
+            <li class="menu-item" *ngFor="let item of items; let i = index">
+              <a (click)="getItem(i)">{{ items[i] }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="product-quantity">
+        <h5 class="product-text pt-2">Quantity</h5>
+        <div class="quantity-btn">
+            <button (click)="onDecreaseQty()" class="btn btn btn-action"><i class="icon icon-minus"></i></button>
+            <span class="quantity">{{ qty }}</span>
+            <button (click)="onIncreaseQty()" class="btn btn-action"><i class="icon icon-plus"></i></button>
+        </div>
+      </div>
+      <div class="add-cart">
+        <button class="btn add-cart-btn">
+          <h6 class="text-uppercase h5">Add to cart</h6>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="container description mt-2">
+    <h3 class="description-title">Description: </h3>
+    <p class="description-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum omnis nostrum sequi quis. Eos quam dolores voluptatum excepturi dignissimos rem deserunt quo nobis mollitia praesentium ullam, delectus hic atque.</p>
+  </div>
+  <div class="container reviews">
+    <div class="accordion">
+      <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+      <label class="accordion-header review-title" for="accordion-1">
+        <i class="icon icon-plus mr-1"></i>
+        Reviews
+      </label>
+      <div class="accordion-body">
+        <div class="review-content mt-2">
+          <h5>John Doe</h5>
+          <h6>May 1, 2019</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi molestiae commodi delectus ex ducimus consequuntur minima quas possimus distinctio nisi, doloribus atque vel aperiam animi quidem laudantium provident recusandae odio?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="featured-products">
+    <h3 class="text-center featured-products-title">Featured Products</h3>
+    <div class="containers">
+      <div class="columns">
+        <app-product-detail></app-product-detail>
+        <app-product-detail></app-product-detail>
+        <app-product-detail></app-product-detail>
+        <app-product-detail></app-product-detail>
+      </div>
+    </div>
+  </div>
+  <app-view-all-products></app-view-all-products>
+</div>
+

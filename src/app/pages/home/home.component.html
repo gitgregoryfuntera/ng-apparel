@@ -1,0 +1,124 @@
+<div>
+  <div class="carousel">
+    <!-- carousel locator -->
+    <input class="carousel-locator" id="slide-1" type="radio" name="carousel-radio" hidden="" checked="">
+    <input class="carousel-locator" id="slide-2" type="radio" name="carousel-radio" hidden="">
+    <input class="carousel-locator" id="slide-3" type="radio" name="carousel-radio" hidden="">
+    <input class="carousel-locator" id="slide-4" type="radio" name="carousel-radio" hidden="">
+    
+    <!-- carousel container -->
+    <div class="carousel-container">
+      <!-- carousel item -->
+      <figure class="carousel-item">
+        <div class="carousel-msg">
+          <h5>Good Quality</h5>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptatum maiores debitis ut hic! Quidem ipsa quam</p>
+          <div class="carousel-btn">
+            <span class="view-prod">View Products</span><i class="material-icons view-icon">chevron_right</i>
+          </div>
+        </div>
+        <img class="img-responsive rounded" src="../../../assets/Carousel_picture1.jpeg" alt="macOS Yosemite Wallpaper">
+      </figure>
+      <figure class="carousel-item">
+        <div class="carousel-msg">
+          <h5>Good Quality</h5>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptatum maiores debitis ut hic! Quidem ipsa quam</p>
+          <div class="carousel-btn">
+            <span class="view-prod">View Products</span><i class="material-icons view-icon">chevron_right</i>
+          </div>
+        </div>
+        <img class="img-responsive rounded" src="../../../assets/Carousel_picture1.jpeg"  alt="macOS Yosemite Wallpaper">
+      </figure>
+      <figure class="carousel-item">
+        <div class="carousel-msg">
+          <h5>Good Quality</h5>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptatum maiores debitis ut hic! Quidem ipsa quam</p>
+          <div class="carousel-btn">
+            <span class="view-prod">View Products</span><i class="material-icons view-icon">chevron_right</i>
+          </div>
+        </div>
+        <img class="img-responsive rounded" src="../../../assets/Carousel_picture1.jpeg" alt="macOS El Capitan Wallpaper">
+      </figure>
+      <figure class="carousel-item">
+        <div class="carousel-msg">
+          <h5>Good Quality</h5>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptatum maiores debitis ut hic! Quidem ipsa quam</p>
+          <div class="carousel-btn">
+            <span class="view-prod">View Products</span><i class="material-icons view-icon">chevron_right</i>
+          </div>
+        </div>
+        <img class="img-responsive rounded" src="../../../assets/Carousel_picture1.jpeg" alt="macOS El Capitan Wallpaper">
+      </figure>
+    </div>
+    <!-- carousel navigation -->
+    <div class="carousel-nav">
+      <label class="nav-item text-hide c-hand" for="slide-1">1</label>
+      <label class="nav-item text-hide c-hand" for="slide-2">2</label>
+      <label class="nav-item text-hide c-hand" for="slide-3">3</label>
+      <label class="nav-item text-hide c-hand" for="slide-4">4</label>
+    </div>
+  </div>
+  <div class="featured-products">
+    <h3 class="text-center featured-products-title">Featured Products</h3>
+    <div class="containers">
+      <div class="columns">
+        <app-product-detail></app-product-detail>
+        <app-product-detail></app-product-detail>
+        <app-product-detail></app-product-detail>
+        <app-product-detail></app-product-detail>
+      </div>
+    </div>
+  </div>
+  <app-view-all-products></app-view-all-products>
+  <!-- <div class="view-all-products" [routerLink]="['/products']">
+    <img class="img-responsive" src="../../../assets/shirt-collection.jpeg"/>
+    <div class="view-all-text" >
+      <h2 class="view-all-maintext text-uppercase">View All</h2>
+      <h5 class="view-all-subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repudiandae est ab!</h5>
+    </div>
+  </div>
+  <div class="sale-message mt-2">
+    <h4 class="text-center text-uppercase mt-1 sale-title">15% Sale Off</h4>
+    <h5 class="m-2 text-center sale-content">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    </h5>
+    <div class="sale-btn text-center pt-2">
+      <button class="text-uppercase btn-know-more btn">KNOW MORE</button>
+    </div>
+  </div> -->
+  <div class="style-container mt-2">
+    <div class="style fashion">
+      <img src="../../../assets/home-pic1.jpeg" class="img-responsive"/>
+      <div class="card style-card">
+        <div class="card-header">
+          <div class="card-title h5 style-card-title fashion-title">Fashionable & Stylish</div>
+          <div class="body">
+            <p class="m-0 mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta praesentium iure nostrum?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="style dress mt-2">
+      <img src="../../../assets/home-shirt2.jpeg" class="img-responsive"/>
+      <div class="card style-card">
+        <div class="card-header">
+          <div class="card-title h5 style-card-title dress-title">Dress to Kill</div>
+          <div class="body">
+            <p class="m-0 mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta praesentium iure nostrum?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="style simple mt-2">
+      <img src="../../../assets/home-pic3.jpeg" class="img-responsive"/>
+      <div class="card style-card">
+        <div class="card-header">
+          <div class="card-title h5 style-card-title simple-title">Simple & Elegant</div>
+          <div class="body">
+            <p class="m-0 mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta praesentium iure nostrum?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

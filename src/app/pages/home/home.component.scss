@@ -1,0 +1,120 @@
+.carousel {
+    width: 107%;
+    height: 254px;
+    left: -8px;
+}
+
+.carousel .carousel-nav {
+    bottom: -0.5rem;
+}
+
+.carousel-msg {
+    position: absolute;
+    width: 230px;
+    height: 200px;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-msg h5 {
+    margin: 10px;
+    font-weight: 300;
+}
+
+.carousel-msg h5:after {
+    content: "";
+    display: block;
+    width: 45%;
+    border-bottom: 2px solid black;
+}
+
+p {
+    font-weight: 100;
+    margin: 11px;
+    font-size: 14px;
+}
+
+.carousel-btn {
+    width: 140px;
+    background: black;
+    color: #fff;
+    right: -15px;
+    position: absolute;
+}
+
+.view-prod {
+    margin-left: 6px;
+    font-weight: 100;
+    line-height: 2;
+    padding-left: 5px;
+}
+
+.view-icon {
+    position: absolute;
+    top: 4px;
+}
+
+.featured-products-title {
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.featured-products-title::after {
+    content: "";
+    display: block;
+    width: 35%;
+    border-bottom: 2px solid black;
+    margin: auto;
+    margin-top: 3px;
+}
+
+.style {
+    position: relative;
+}
+
+.fashion {
+    background: #E8EDF0;
+    height: 600px;
+}
+
+.simple {
+    background: #E8EDF0;
+    height: 650px;
+}
+
+.dress {
+    background: #DEF874;
+    height: 650px;
+}
+
+.style-card {
+    bottom: 75px;
+    position: absolute;
+    left: 15px;
+    width: 90%;
+}
+
+.fashion-title::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid black;
+    margin-top: 5px;
+    width: 40%;
+}
+
+.dress-title::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid black;
+    margin-top: 5px;
+    width: 20%;
+}
+
+.simple-title::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid black;
+    margin-top: 5px;
+    width: 23%;
+}
+

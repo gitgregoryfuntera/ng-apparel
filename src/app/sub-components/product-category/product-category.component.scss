@@ -1,0 +1,26 @@
+//cards
+.product-title {
+    letter-spacing: 3px;
+    padding-top: 35px;
+}
+
+.product-item {
+    position: relative;
+}
+.image-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000a6;
+    color: #fff;
+}
+
+
+.product-title::after {
+    content: "";
+    display: block;
+    width: 20%;
+    border-bottom: 4px solid #fff;
+    margin-top: 3px;
+}

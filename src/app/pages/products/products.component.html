@@ -1,0 +1,36 @@
+<div class="hero pt-0 pb-0">
+  <img class="hero-body p-0" src="../../../assets/view-all-products.jpeg"/>
+  <div class="hero-message text-center mt-2">
+    <h4 class="message-title">The Products</h4>
+    <p class="message-subtext">All our products are top of the line best quality. Has been created with care and brings out the potential of all our clients.</p>
+  </div>
+</div>
+
+<div class="container mt-2">
+  <div class="columns">
+    <app-product-category 
+      [routerLink]="['/products', 'shirts']" 
+      class="mt-2"
+      [image] = "'./../../assets/product_shirt.jpeg'"
+      [category] = "'Shirts'"
+      [message] = "'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis blandit mi sit amet dolor tristique semper.'"
+    ></app-product-category>
+    <app-product-category class="mt-2"
+      [routerLink]="['/products', 'shirts']" 
+      [image] = "'./../../assets/product_jackets.jpeg'"
+      [category] = "'Jackets'"
+      [message] = "'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis blandit mi sit amet dolor tristique semper.'"
+    ></app-product-category>
+    <app-product-category class="mt-2"
+      [image] = "'./../../assets/product_short.jpeg'"
+      [category] = "'Shorts'"
+      [message] = "'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis blandit mi sit amet dolor tristique semper.'"
+    ></app-product-category>
+    <app-product-category class="mt-2"
+    [image] = "'./../../assets/product_pants.jpeg'"
+    [category] = "'Pants'"
+    [message] = "'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis blandit mi sit amet dolor tristique semper.'"
+  ></app-product-category>
+  </div>
+</div>
+<router-outlet></router-outlet>
